@@ -1,0 +1,187 @@
+/* CSS créé par Marinc - 2026 */
+/* Code pour un profile type tinder */
+
+/* === Boite principale */
+.main_DA {
+  width: 350px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: #ececec;
+  background-image: linear-gradient(0deg,rgb(201, 201, 201) 0%, rgba(255, 255, 255, 0) 100%);
+  background-size: 100% 10%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  color: #3a3a3a;
+  font-family: "Open Sans";
+}
+
+/* === Gestion de l'image en haut */
+.images_DA {
+  position: relative;
+  img {
+	width: 100%;
+	position: relative;
+  }
+}
+
+/* === Petite barre en haut pour les possibles autres images */
+.nav_DA {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  width: 90%;
+  left: 5%;
+  div {
+	width: -webkit-fill-available;
+	height: 5px;
+	background-color: rgba(255,255,255,0.25);
+	margin: 0 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	&.active {
+	  background-color: rgba(255,255,255,0.5);
+	  cursor:default;
+	}
+  }
+}
+
+/* === Fleche vers le bas */
+.arrow_DA {
+  width: 40px;
+  height: 40px;
+  background: #FF6C5A;
+  background: linear-gradient(45deg,rgba(254, 70, 109, 1) 0%, rgba(255, 108, 90, 1) 100%);
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+  cursor: pointer;
+}
+
+/* === Boite du profil */
+.infos_DA {
+  padding: 10px 20px;
+  font-size: 13px;
+  div {
+	color: #6c6c6c;
+	margin: 10px 0 20px 0;
+  }
+}
+
+/* === Info principal du profil (nom, age, verification) */
+.name_DA {
+  font-size: 25px;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+.age_DA {
+  color: #3a3a3a;
+  font-weight: lighter;
+  font-size: 21px;
+  padding: 0 0 0 5px;
+  baseline-shift: bottom;
+  line-height: 31px;
+}
+
+.verified_DA {
+  color: #3488e2;
+  font-size: 20px;
+  margin: 0 5px;
+
+  .material-symbols-outlined {
+    font-size: 20px;
+    line-height: 15px;
+    baseline-shift: center;
+  }
+}
+
+/* === Modele de boite (titre) */
+.title_DA {
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2;
+}
+
+/* === Mini Tags */
+.tag_DA {
+  border: solid 1px #505050;
+  padding: 2px 10px;
+  border-radius: 15px;
+  margin: 2px;
+  display: inline-block;
+
+  .material-symbols-outlined {
+	color: #3a3a3a;
+	margin: 0 5px 0 -3px;
+	font-size: 20px;
+    line-height: 15px;
+    baseline-shift: center;
+  }
+}
+
+/* === Boite d'action avec les boutons match, no match, favoris ...  */
+.action_DA {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+
+    div {
+    width: 40px;
+    height: 40px;
+    border: solid 2px #f4b214;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #ececec;
+
+    .material-symbols-outlined {
+	  font-size: 25px;
+      line-height: 35px;
+    }
+
+    &.reset_DA {
+      color: #f4b214; 
+      border-color: #f4b214; 
+   }
+
+    &.no_DA {
+	  width: 55px;
+	  height: 55px;
+	  color: #fc4865; 
+      border-color: #fc4865; 
+      span {
+        font-size: 30px;
+        line-height: 51px;
+        font-variation-settings: 'wght' 700;
+      }
+    }
+
+    &.match_DA {
+	  width: 55px;
+	  height: 55px;
+	  color: #43e3c4; 
+      border-color: #43e3c4; 
+    
+      span {
+        font-size: 30px;
+        line-height: 51px;
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    }
+
+    &.fav_DA, &.send_DA{ 
+	  color: #23b9ff; 
+	  border-color: #23b9ff; 
+	  span { 
+	    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    }
+  }
+}
