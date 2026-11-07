@@ -159,7 +159,7 @@ h {
 		position: absolute;
 		width: 90%;
 		height: 1px;
-		background: var(--neutralDark);
+		background: var(--neutralDarker);
 		left: 5%;
 		margin: 9px 0 0 0; 
 		z-index:1;
