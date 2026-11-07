@@ -1,0 +1,137 @@
+/* MAIN BODY */
+.main_thread {
+	width: 450px;
+	margin: 0 auto;
+}
+
+/* PROFIL */
+.profile_thread {
+	overflow: hidden;
+	border-radius: 15px;
+	background-color: var(--neutralDark);
+	position: relative;
+
+	.icone_thread {
+		width: 100px;
+		border-radius: 50px;
+		position: absolute;
+		top: 100px;
+		right: 17px;
+	}
+
+	.info_thread {
+		margin: 10px 35px 20px 35px;
+		font-size: 13px;
+		b {
+			margin: 0 0 0 7px;
+		}
+	}
+}
+
+.banner_thread {
+	width: 100%;
+	height: 150px;
+	background-size: 100% auto;
+	background-position: 50%;
+}
+
+.pseudo_thread {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--accentClr);
+	display: inline-block;
+	margin: 0 0 0 -15px;
+}
+
+.descr_thread {
+	font-style: italic;
+	margin: 10px 0 0 7px;
+	font-size: 14px;
+}
+
+/* THREAD PRIMAIRE */
+.first_thread {
+	background: var(--neutralDark);
+	border-radius: 15px;
+	padding: 15px;
+	font-size: 13px;
+	padding: 15px 30px;
+
+	b {
+		margin: 0 0 0 7px;
+	}
+}
+
+.a_thread {
+	.icone_thread {
+		width: 50px;
+		border-radius: 25px;
+		margin: 0px 14px 0 0;
+		height: 50px;
+	}
+
+	.info_thread {
+		align-items: center;
+		display: flex;
+		font-size: 18px;
+		margin: 10px 0;
+		color: var(--accentClr);
+
+		
+	}
+}
+
+.time_thread {
+	font-size: 11px;
+	color: var(--neutralDarker);
+	margin: 10px 0 2px 7px;
+}
+
+.listIcon_thread {
+	column-count: 4;
+	text-align: center;
+	gap: 46px;
+	width: 100%;
+	margin: 10px auto 0 auto;
+	cursor: pointer;
+	color: var(--neutralDarker);
+	padding: 10px 20px 0 20px;
+	border-top: solid 1px var(--neutral);
+
+	.material-symbols-rounded {
+		display: block;
+	}
+
+}
+
+/* THREAD SECONDAIRE */
+.secondary_thread {
+	font-size: 13px;
+	width: 75%;
+	margin: 0 0 0 65px;
+	position: relative;
+	padding: 0 0 31px 0px;
+
+	&:before {
+		content: '';
+		width: 20px;
+		height: 122%;
+		display: block;
+		position: absolute;
+		left: -28px;
+		border-radius: 0 0 0 12px;
+		border-left: solid 2px var(--neutralDark);
+		border-bottom: solid 2px var(--neutralDark);
+		top: -52px;
+	}
+}
+
+/* AJUSTEMENT POUR LE PREMIER THREAD SECONDAIRE */
+.a_thread .secondary_thread:nth-of-type(2)::before {
+  top: -36px;
+  height: 110%;
+}
+
+.a_thread .secondary_thread:nth-of-type(2) {
+  margin: 20px 0 0 65px;
+}
