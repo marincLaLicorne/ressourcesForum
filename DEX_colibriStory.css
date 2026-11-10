@@ -57,7 +57,9 @@
 }
 
 .reel_com {
-  display: flex;
+  display: flex;  
+  gap: 10px;
+  width: 96%;
 
   div {
     width: 80%;
