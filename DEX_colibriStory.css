@@ -1,0 +1,94 @@
+.reel_ig {
+  margin: auto;
+  background: var(--neutralDark);
+  border-radius: 20px;
+  border: 2px solid var(--neutralDarker);
+  color: var(--textColor);
+  box-shadow: var(--shadowBox);
+  width: 450px;
+  height: 770px;
+  overflow: hidden;
+}
+
+.reel_img {
+  width: 100%;
+  height: 700px;
+  border-radius: 20px;
+  background-size: auto 100%;
+}
+
+.reel_timeline {
+  padding: 20px 10px;
+  display: flex;
+}
+
+.reel_timeline div {
+  height: 3px;
+  width: 100%;
+  background: #e6d7cf8c;
+  margin: 0 3px;
+  border-radius: 5px;
+  &.reel_actif {
+    background: #e6d7cf;
+  }
+}
+
+.reel_desc {
+  display: flex;
+  margin: 0 25px;
+
+  img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+
+  .reel_handle {
+    width: 305px;
+    align-content: center;
+    padding: 0 15px;
+  }
+
+  i {
+    font-size: 30px;
+    align-self: center;
+    color : #e6d7cf;
+  }
+}
+
+.reel_com {
+  display: flex;
+
+  div {
+    width: 80%;
+    border: 1px solid var(--neutralDarker);
+    border-radius: 27px;
+    padding: 11px 20px;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+    margin: 10px;
+  }
+
+  i {
+    font-size: 25px;
+    align-self: center;
+  }
+
+}
+
+.reel_handle {
+  font-size: 16px;
+  color: #e6d7cf;
+  .reel_pseudo {
+    font-weight: 700;
+  }
+  .reel_artist {
+    font-weight: 600;
+  }
+  .reel_time {
+    color: #e6d7cf8c;
+  }
+  i {
+    font-size: 16px;
+  }
+}
