@@ -1,0 +1,88 @@
+
+/* AO3 */
+.main_ao3 {
+	background: var(--neutralDark);
+	width: 550px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border-radius: 15px;
+	&.fanfic {
+		padding: 20px 25px;
+	    text-align: justify;
+	    font-size: 13px;
+	}
+}
+
+/*BANDEAU SUPERIEUR*/
+.info_ao3 {
+	display: flex;
+	gap: 15px;
+}
+
+.iconBox_ao3 {
+	display: flex;
+	width: 75px;
+	flex-wrap: wrap;
+
+	i {
+		display: block;
+		width: 30px;
+		height: 30px;
+		background: var(--neutralDarker);
+		border-radius: 8px;
+		text-align: center;
+		font-size: 20px;
+		line-height: 30px;
+		margin: 2px;
+	}
+}
+
+.titre_ao3 {
+	font-size: 16px;
+}
+
+.link_ao3 {
+	color: var(--accentClr);
+	position: relative;
+
+  	&:after {
+		position: absolute;
+		background: var(--accentClr);
+		display: block;
+		width: 101%;
+		height: 1px;
+		content: '';
+		margin: -2px 0 0 0;
+		left: 0;
+	}
+}
+
+.fandom_ao3 {
+	font-size: 13px;
+	border-bottom: dotted 1px var(--textColor);
+}
+
+/* BANDEAU INFO */
+.infoBtm_ao3 {
+	text-align: right;
+	font-size: 12px;
+	 span {
+		display: inline-block;
+		margin: 0 10px 0 0;
+	}
+}
+
+/* LISTE DES TAGS */
+
+.listTag_ao3 {
+	margin: 10px 0;
+	span {
+		border-bottom: dotted 1px var(--textColor);
+		padding: 0 3px;
+
+		&.ship {
+			background: var(--accentClrDark);
+		}
+	}
+}
+
